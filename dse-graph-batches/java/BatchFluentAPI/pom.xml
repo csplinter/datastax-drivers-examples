@@ -6,7 +6,7 @@
     <artifactId>dse-graph-batches-example</artifactId>
 
     <description>
-        Example for demonstrating how to write DSEGraph Batches via Fluent API
+        Example for demonstrating how to write DSE Graph Batches via Fluent API
     </description>
 
     <dependencies>
@@ -27,6 +27,12 @@
             <artifactId>gremlin-core</artifactId>
             <version>3.3.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>gremlin-shaded</artifactId>
+            <version>3.3.3</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -45,7 +51,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>BatchFluentAPI.BatchFluentAPIExample</mainClass>
+                                    <mainClass>BatchFluentAPIExample</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -64,4 +70,3 @@
     </build>
 
 </project>
-
